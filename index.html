@@ -280,15 +280,14 @@
         <label>반</label>
         <select id="classInput">
           <option value="">반 선택</option>
-          <option value="1">1반</option><option value="2">2반</option>
-          <option value="3">3반</option><option value="4">4반</option>
-          <option value="5">5반</option><option value="6">6반</option>
-          <option value="7">7반</option><option value="8">8반</option>
+          <option value="1">1반</option>
+          <option value="2">2반</option>
+          <option value="3">3반</option>
         </select>
       </div>
       <div class="input-group">
         <label>번호</label>
-        <input type="number" id="numberInput" placeholder="출석 번호" min="1" max="50">
+        <input type="number" id="numberInput" placeholder="출석 번호" min="1" max="25">
       </div>
       <div class="input-group">
         <label>이름</label>
@@ -335,7 +334,7 @@
 
 <script>
   const STORAGE_KEY = 'earlyBirdScriptUrl';
-  const DEPT_LIST = ['기계과','금속과','자동화과','자동차과','전기과','전자과','컴퓨터과','건축과'];
+  const DEPT_LIST = ['로봇기계시스템과','기계과','로봇소재융합과','산업설비과','반도체과','자동차과','전기과','건축토목과'];
   // ↑ 학과 목록은 여기서 수정 (Apps Script CONFIG와 동일하게)
 
   let scriptUrl = '';
